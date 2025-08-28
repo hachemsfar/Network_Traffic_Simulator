@@ -1,0 +1,76 @@
+{
+  "feature_columns": [
+    "total_packets",
+    "unique_dst_ports",
+    "unique_src_ports",
+    "unique_dst_ips",
+    "tcp_ratio",
+    "udp_ratio",
+    "icmp_ratio",
+    "avg_packet_size",
+    "total_payload",
+    "fragmented_ratio",
+    "syn_packets",
+    "ack_packets",
+    "rst_packets",
+    "fin_packets",
+    "syn_ack_packets",
+    "scan_flag_ratio",
+    "backscatter_ratio",
+    "port_scan_intensity",
+    "icmp_types_count",
+    "ttl_variance",
+    "temporal_duration",
+    "unique_tcp_seqs",
+    "avg_tcp_window",
+    "top_dst_port",
+    "top_dst_port_share",
+    "svc_dns",
+    "svc_echo/qotd/chargen",
+    "svc_ftp",
+    "svc_high",
+    "svc_http",
+    "svc_https",
+    "svc_imap",
+    "svc_ldap",
+    "svc_mdns",
+    "svc_memcached",
+    "svc_netbios",
+    "svc_ntp",
+    "svc_other",
+    "svc_pop3",
+    "svc_port0",
+    "svc_rdp",
+    "svc_sip",
+    "svc_smb",
+    "svc_smtp",
+    "svc_snmp",
+    "svc_ssdp",
+    "svc_ssh",
+    "svc_telnet",
+    "svc_tftp",
+    "svc_xdmcp"
+  ],
+  "metrics": {
+    "logistic_regression": {
+      "accuracy": 0.6798098272639462,
+      "f1_macro": 0.39030450448863035
+    },
+    "random_forest": {
+      "accuracy": 0.9336477790182771,
+      "f1_macro": 0.7312740137657471
+    },
+    "gradient_boosting": {
+      "accuracy": 0.9438739541126736,
+      "f1_macro": 0.7851886319101534
+    }
+  },
+  "label_column": "label",
+  "test_size": 0.2,
+  "random_state": 42,
+  "models": {
+    "logistic_regression": "logistic_regression_model.pkl",
+    "random_forest": "random_forest_model.pkl",
+    "gradient_boosting": "gradient_boosting_model.pkl"
+  }
+}
